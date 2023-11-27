@@ -1,0 +1,106 @@
+@media (max-width: 992px) {
+  section.contact article.formArticle .allCustomerDetails .NameSelect .name input {
+    width: auto;
+  }
+  section.contact article.formArticle .allCustomerDetails .NameSelect .emailPhone {
+    width: auto;
+  }
+  section.contact article.formArticle .allCustomerDetails .NameSelect .emailPhone .phoneCatch #phone {
+    margin-right: inherit;
+  }
+  section.contact article.formArticle .allCustomerDetails input:not([type=checkbox]),
+  section.contact article.formArticle .allCustomerDetails select {
+    width: auto;
+  }
+  form .phoneCatch {
+    margin-left: 1rem !important;
+  }
+}
+@media (max-width: 772px) {
+  form .allCustomerDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form .allCustomerDetails .NameSelect {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3rem;
+  }
+  form .allCustomerDetails .NameSelect .name input {
+    width: 60% !important;
+  }
+  form .allCustomerDetails .NameSelect .select {
+    margin-left: inherit !important;
+  }
+  form .allCustomerDetails .NameSelect .select select {
+    width: 58% !important;
+  }
+  form .allCustomerDetails .emailPhone {
+    margin-top: inherit !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  form .allCustomerDetails .emailPhone .emailCatch input {
+    width: 60% !important;
+  }
+  form .allCustomerDetails .emailPhone .phoneCatch input {
+    width: 78% !important;
+  }
+  form .agreeButton {
+    margin-top: inherit !important;
+  }
+}
+@media (max-width: 552px) {
+  form .allCustomerDetails {
+    gap: 40px;
+  }
+  form .allCustomerDetails .NameSelect {
+    gap: 40px;
+  }
+  form .allCustomerDetails .NameSelect .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  form .allCustomerDetails .NameSelect .name input {
+    margin-left: inherit !important;
+    width: 100% !important;
+  }
+  form .allCustomerDetails .NameSelect .select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
+  }
+  form .allCustomerDetails .NameSelect .select select {
+    margin-left: inherit;
+    width: 100% !important;
+  }
+  form .allCustomerDetails .emailPhone .emailCatch input {
+    width: 100% !important;
+    margin-left: inherit !important;
+  }
+  form .allCustomerDetails .emailPhone .phoneCatch {
+    margin-left: inherit !important;
+  }
+  form .allCustomerDetails .emailPhone .phoneCatch input {
+    width: 100% !important;
+    margin-left: inherit !important;
+  }
+}

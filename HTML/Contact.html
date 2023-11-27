@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!--BootStrapt-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--Font Awesomme-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
+
+    <!--Contact Media-->
+    <link rel="stylesheet" href="/CSS/contactMedia.css">
+</head>
+
+<body>
+
+    <!--Header Start-->
+    <header class="">
+        <nav class="container navbar">
+            <div class="leftlogoside">
+                <a href="/HTML/Home.html"> <img src="/IMAGES/logo.svg" alt="logovar"></a>
+            </div>
+            <div class="rightside">
+                <ul class="menuElements">
+                    <li class="element">Products</li>
+                    <li class="element">About Us</li>
+                    <li class="element"><a href="/HTML/Blog.html">Blog</a></li>
+                    <button class="contactBut"><a href="/HTML/Contact.html">Contact </a></button>
+
+                    <button class="navbar-toggler text-white menuBut" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <img src="/IMAGES/burgerIcon.svg" alt="">
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Header End-->
+
+    <!--Section Contact Html Start-->
+
+    <section class="contact">
+
+        <div class="contactTitle">
+            <h2>Contact</h2>
+            <h4>We can help you turn your idea into reality, take over your existing project, or extend your current
+                development team.</h4>
+        </div>
+
+        <article class="container formArticle">
+            <div class="formInfo">
+                <h5><a href="#">Get in touch</a></h5>
+                <h4>Schedule an appointment</h4>
+            </div>
+
+            <form>
+                <div class="allCustomerDetails">
+
+                    <div class="NameSelect">
+                        <div class="name">
+                            <label for="name">Hey, my name is</label>
+                            <input type="text" id="name" placeholder="Your name">
+                        </div>
+                        <div class="select">
+                            <label for="category">and I’m looking for</label>
+                            <select id="category">
+                                <option value="">Selecet category</option>
+                                <option value="usa">USA</option>
+                                <option value="canada">Canada</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="australia">Australia</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="emailPhone">
+                        <div class="emailCatch">
+                            <label for="email">Get in touch me at</label>
+                            <input type="email" id="email" placeholder="Your email">
+                        </div>
+                        <div class="phoneCatch">
+                            <label for="phone">and</label>
+                            <input type="tel" id="phone" placeholder="Your phone">
+                        </div>
+
+                    </div>
+                    <div class="agreeButton">
+                        <input type="checkbox" class="checkAgree" id="terms" required>
+                        <label for="terms">I am here to be aware of future updates</label>
+                    </div>
+                </div>
+                <div class="buttonSend">
+                    <button type="submit" class="btn-icon">Send enquiry <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+            </form>
+
+        </article>
+
+        <article class="container contactinfos">
+            <div class="maininfos">
+                <div class="numbers">
+                    <img src="/IMAGES/contactfirsticon.svg" alt="icon">
+                    <h5>+994 12 345 67 89</h5>
+                    <h5>+994 51 234 89 00</h5>
+                </div>
+                <div class="mailadress">
+                    <img src="/IMAGES/contactsecondicon.svg" alt="secondicon">
+                    <h5>info@fscode.com</h5>
+                </div>
+                <div class="livelocation">
+                    <img src="/IMAGES/contactthirdicon.png" alt="thirdicon">
+                    <h5 style="line-height: 26px;">Ataturk avenue 19, <br>
+                        Baku, Azerbaijan</h5>
+
+                </div>
+
+
+
+            </div>
+        </article>
+
+    </section>
+
+    <!--Section Contact Html End-->
+
+    <!--Footer Html Start-->
+
+    <footer>
+        <div class="container footermain">
+            <div class="iconSide">
+
+                <img src="/IMAGES/footerLogo.svg" alt="logo">
+                <div class="copyRight">
+                    <!-- <i class="fas fa-copyright"></i> -->
+                    <img src="/IMAGES/copyright.svg" alt="">
+                    <h6>2021 FS code. All rights reserved</h6>
+                </div>
+
+                <div class="socialMedias">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <span></span>
+            </div>
+
+            <div class="menuElements">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="/HTML/Contact.html">Contact</a></li>
+                    <li><a href="/HTML/Blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="otherInformation">
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li style="visibility: hidden;">jsj</li>
+                </ul>
+            </div>
+
+            <div class="getInfo">
+                <h6>Be aware of updates</h6>
+                <div class="inputButton"><input type="email" placeholder="Email">
+                    <button type="submit" class="btn-icon">Subscribe</button></div>
+
+                <div class="emailFooter"><i class="far fa-envelope"></i> <a href="#">info@fscode.com</a></div>
+                <h1></h1>
+                <h1></h1>
+            </div>
+        </div>
+
+        <div class="mobileSocialRight">
+            <div class="socialMedias socialMediasMobile">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div class="middleLineFooter"></div>
+            <div class="copyRight">
+
+                <img src="/IMAGES/copyright.svg" alt="">
+                <h6>2021 FS code. All rights reserved</h6>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!--Footer Html End-->
+
+    <!--BooTstarpt JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

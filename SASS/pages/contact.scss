@@ -1,0 +1,253 @@
+@import "../helper/mixin";
+@import "../helper/map";
+@import "../helper/variables";
+@import "../components/header";
+@import "../components/blogCard";
+@import "../components/footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Euclid+Circular+A:wght@400;700&display=swap");
+
+//Section Contact Css
+header {
+  margin-bottom: 0;
+}
+
+::placeholder {
+  color: #ff8145;
+}
+
+section.contact {
+  background-color: #faf4e7;
+overflow-x: hidden;
+  .contactTitle {
+    @include flex(center, center);
+    flex-direction: column;
+    h2 {
+      font-weight: map-get($fonts, fw-text-3);
+      font-size: 34px;
+      line-height: 43px;
+      color: #000000;
+      padding-top: 48px;
+      padding-bottom: 48px;
+
+      h4 {
+        font-weight: map-get($fonts, fw-text-3);
+        font-size: 20px;
+        line-height: 32px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+// Article Form css Start
+
+section.contact article.formArticle {
+  margin-top: 4rem;
+  border-bottom: 1px solid #ccd1d5;
+}
+section.contact article.formArticle form {
+  margin-bottom: 104px;
+}
+
+section.contact article.formArticle .formInfo {
+  h5 {
+    font-weight: map-get($fonts, fw-text-3);
+    font-size: map-get($fonts, fs-mobile-sm);
+    line-height: 32px;
+    color: #677480;
+  }
+  h4 {
+    font-style: normal;
+    font-weight: map-get($fonts, fw-text-3);
+    font-size: 34px;
+    line-height: 43px;
+    color: #212121;
+  }
+}
+
+section.contact article.formArticle form {
+  margin-top: 68px;
+
+  .allCustomerDetails {
+    @include flex(null, null);
+    flex-wrap: wrap;
+    .NameSelect {
+      display: flex;
+    }
+  }
+  input:not([type="checkbox"]),
+  select {
+    border: none;
+    border-bottom: 1px solid #9aa2ab;
+    text-align: center;
+    width: 280px;
+    background: inherit;
+    color: #ff8145;
+    margin-left: 24px;
+    outline: none;
+  }
+  .emailPhone {
+    margin-top: 60px;
+    display: flex;
+    .phoneCatch {
+      margin-left: 56px;
+    }
+    .phoneCatch #phone {
+      margin-right: 56px;
+    }
+  }
+  .agreeButton {
+    margin-top: 104px;
+    margin-bottom: 63px;
+    display: flex;
+    flex-basis: 100%;
+    input {
+      margin-right: 24px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .buttonSend {
+    button {
+      width: 176px;
+      height: 48px;
+      border: none;
+      border-radius: 24px;
+      background-color: #43ba7f;
+      color: #fff;
+      font-size: 14px;
+      i {
+        transform: translate(16px, 2px);
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+section.contact article.formArticle form input:focus {
+  border-color: #ff8145 !important;
+}
+section.contact article.formArticle form .select {
+  margin-left: 56px;
+  .category {
+    margin-right: 24px;
+  }
+}
+// Article Form css End
+
+// Article Contact Infos CSS Start
+section.contact article.contactinfos {
+  margin-top: 5rem;
+  padding-bottom: 75px;
+  .maininfos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 27px;
+    }
+    h5 {
+      font-size: map-get($fonts, fs-mobile-sm);
+      font-weight: map-get($fonts, fw-text-3);
+      color: #02172c;
+    }
+    .numbers h5 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Article Contact Infos CSS End
+
+//Section Contact End
+
+//Footer Css Start
+/*
+footer {
+  background-color: #0d1118;
+  color: #6E7581;
+
+}
+
+footer .footermain {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 104px;
+
+  .menuElements ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .otherInformation ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .getInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .getInfo input{ 
+    width: 248px;
+    height: 48px;
+    color: #C0C0C0;
+    border-radius: 16px;
+    border: none;
+    padding: 16px;
+  }
+  .getInfo button{
+    width: 96px;
+    height: 48px;
+    background: $buttongren;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    margin-left: 8px;
+  }
+  .getInfo .emailFooter a{
+    margin-left: 1rem;
+  }
+}
+
+footer .footermain .iconSide {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  color: #3d4045;
+  img{
+    width: 156px;
+    height: 48px;
+  }
+  .socialMedias {
+    display: flex;
+    gap: 24px;
+    i{
+      font-size: 24px;
+    }
+  }
+  .copyRight{
+    display: flex;
+    gap: 10px;
+    img{
+      width: 24px;
+      height: 24px;
+    }
+    h6{
+      transform: translate(10px, 3px);
+    }
+  }
+}
+*/
+//Footer Css End

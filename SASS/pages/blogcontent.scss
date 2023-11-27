@@ -1,0 +1,132 @@
+@import "../helper/mixin";
+@import "../helper/map";
+@import "../helper/variables";
+@import "../components/header";
+@import "../components/blogCard";
+@import "../components/footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Euclid+Circular+A:wght@400;700&display=swap");
+
+
+
+
+/*  Section blogContent Css Start*/
+
+section.blogContent .contentTitle {
+  font-weight: map-get($fonts, fw-text-3);
+  font-family: "Euclid Circular A";
+  font-size: map-get($fonts, fs-sm);
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+  width: 592px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.blogContent .blogCard {
+  margin-left: auto;
+  margin-right: auto;
+//   width: 900px;
+justify-content: center;
+align-items: center;
+
+.imgCatch{
+    width: 900px;
+    
+    .blogPicture{
+        width: 100%;
+    }
+    .blackshadow{
+        height: 187px;
+    }
+    .blogContentPicture{
+        width: 100%;
+    }
+    .vectors{
+        width: 55px;
+        height: 55px;
+    }
+    .vectors:nth-child(5) {
+       
+        top: 194px;
+        left: 328px;
+      }
+    
+}
+
+  h4.date {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #8b8b8b;
+    margin-top: 36px;
+    margin-bottom: 32px;
+  }
+}
+
+section.blogContent article.TopicContent{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    line-height: 24px;
+    color: #343434;
+    font-weight: map-get($fonts, fw-text-3);
+
+
+    .secondContent{
+        padding-left: 18px;
+
+        h3{
+            font-size: map-get($fonts,fs-mobile-sm);
+            color: $buttongren;
+            line-height: 25px;
+            margin-top: 48px;
+            margin-bottom: 32px;
+        }
+        p{
+            text-align: justify;
+            margin-bottom: 32px;
+        }
+        .lastP{
+            margin-top: 32px;
+        }
+        img{
+            width: 800px;
+            height: auto;
+        }
+        
+    }
+}
+
+/*  Section blogContent Css End*/
+
+
+/*  Section Similar Css Start*/
+
+section.similar{
+    @include flex(center,center);
+    flex-direction: column;
+    margin-top: 129px;
+    margin-bottom: 136px;
+    h1{
+        text-align: center;
+        font-weight: map-get($fonts, fw-text-3);
+        color: #000000;
+        font-size: 34px;
+        margin-bottom: 72px;
+    }
+    .belowInfo h2{
+        color: #27565E;
+      }
+
+
+}
+
+
+
+/*  Section Similar Css End*/

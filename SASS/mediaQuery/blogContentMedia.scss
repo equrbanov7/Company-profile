@@ -1,0 +1,73 @@
+@import "../helper/mixin";
+@import "../helper/map";
+@import "../helper/variables";
+
+// Max width 992 px Start
+
+@media (max-width: 992px) {
+  section.blogContent .blogCard {
+    .imgCatch {
+      width: 700px;
+      .blackshadow {
+        height: 146px;
+      }
+      .vectors:nth-child(5) {
+        top: 149px;
+        left: 226px;
+      }
+    }
+  }
+  section.blogContent article.TopicContent {
+    width: 600px;
+  }
+  section.blogContent article.TopicContent .secondContent img{
+        width: 100%;
+  }
+}
+
+// Max width 772 px Start
+
+@media (max-width: 772px) {
+  section.blogContent .contentTitle {
+    width: auto;
+  }
+  section.blogContent article.TopicContent {
+    width: 100%;
+  }
+
+  section.blogContent .blogCard {
+    width: 100%;
+
+    .imgCatch {
+      width: 500px;
+      .blackshadow {
+        height: 114px;
+      }
+      .vectors:nth-child(5) {
+        top: 100px;
+        left: 138px;
+      }
+      .vectors {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  section.blogContent article.TopicContent {
+    width: 400px;
+  }
+}
+
+// Max width 772 px Start
+
+@media (max-width: 552px) {
+  section.blogContent .blogCard {
+    .imgCatch {
+      width: 100%;
+    }
+  }
+  section.blogContent article.TopicContent .secondContent img {
+    width: 100%;
+  }
+}

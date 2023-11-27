@@ -1,0 +1,125 @@
+@import "../helper/mixin";
+@import "../helper/map";
+@import "../helper/variables";
+
+// Max width 992 px Start
+
+@media (max-width: 992px) {
+  section.contact article.formArticle .allCustomerDetails {
+    .NameSelect {
+      .name {
+        input {
+          width: auto;
+        }
+      }
+      .emailPhone {
+        width: auto;
+
+        .phoneCatch #phone {
+          margin-right: inherit;
+        }
+      }
+    }
+
+    input:not([type="checkbox"]),
+    select {
+      width: auto;
+    }
+  }
+
+  form .phoneCatch {
+    margin-left: 1rem !important;
+  }
+}
+
+// Max width 772 px Start
+
+@media (max-width: 772px) {
+  form .allCustomerDetails {
+    flex-direction: column;
+
+    .NameSelect {
+      flex-direction: column;
+      gap: 3rem;
+      .name {
+        input {
+          width: 60% !important;
+        }
+      }
+
+      .select {
+        margin-left: inherit !important;
+        select {
+          width: 58% !important;
+        }
+      }
+    }
+
+    .emailPhone {
+      margin-top: inherit !important;
+      flex-direction: column;
+      gap: 2rem;
+      .emailCatch {
+        input {
+          width: 60% !important;
+        }
+      }
+      .phoneCatch {
+        input {
+          width: 78% !important;
+        }
+      }
+    }
+  }
+
+  form .agreeButton {
+    margin-top: inherit !important;
+  }
+}
+
+// Max width 552 px Start
+
+@media (max-width: 552px) {
+  form .allCustomerDetails {
+    gap: 40px;
+    .NameSelect {
+      gap: 40px;
+
+      .name {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        input {
+          margin-left: inherit !important;
+          width: 100% !important;
+        }
+      }
+      .select {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        select {
+          margin-left: inherit;
+          width: 100% !important;
+        }
+      }
+    }
+
+    .emailPhone {
+      .emailCatch {
+       
+        input {
+            width: 100% !important;
+            margin-left: inherit !important;
+          }
+      }
+      .phoneCatch {
+        margin-left: inherit !important;
+        input {
+          width: 100% !important;
+          margin-left: inherit !important;
+        }
+      }
+    }
+  }
+}

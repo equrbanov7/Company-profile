@@ -1,0 +1,87 @@
+
+// Header Css Start
+
+header{
+    height: 96px;
+    border-bottom: 1px solid #FBF5F2;
+    margin-bottom: 3rem;
+}
+header nav{
+    margin-top: 26px;
+    margin-bottom: 26px;
+    
+    
+}
+header nav .rightside .menuElements{
+    @include flex(center, center);
+    list-style-type: none;
+    gap: 3.5rem;
+}
+header nav .rightside .menuElements li,button{
+    font-family: "Euclid Circular A";
+    font-style: normal;
+
+    font-weight: map-get($fonts ,fw-text-3 );
+    font-size: map-get($fonts ,fs-card_hl );
+}
+header nav .rightside .menuElements li{
+    color: #343434;
+}
+
+
+header nav .rightside .menuElements button{
+    width: 120px;
+    height: 48px;
+    background-color: $buttongren;
+    border-radius: map-get($fonts, fs-sm );
+    border: none;
+    color: $light_text_color ;
+}
+header nav .rightside .menuElements .menuBut{
+    display: none;
+ }
+
+//Hover
+header nav .rightside .menuElements li:hover{
+    color: $buttongren;
+}
+
+
+
+
+
+// Header Css End
+
+//Media Query , Burger Menu
+@media (max-width:772px){
+    header nav .rightside .menuElements li{
+        display: none;
+    }
+    header nav .rightside .menuElements .menuBut{
+        margin-right: 1rem;
+        width: auto;
+        display: initial;
+     }
+}
+
+// Max width 460 px Start
+
+@media (max-width: 460px) {
+    header nav .rightside .menuElements {
+        display: table-header-group;
+    
+        .contact {
+          width: 112px;
+          height: 48px;
+        }
+      }
+
+}
+
+// Max width 340 px Start
+@media (max-width: 340px){
+    header nav .rightside .menuElements .contactBut{
+        display: none;
+    }
+
+}

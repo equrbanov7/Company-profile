@@ -1,0 +1,224 @@
+@media (max-width: 768px) {
+  section.service {
+    padding-top: 94px;
+  }
+  section.service .container1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3rem;
+  }
+  section.service .container1 .middleLine {
+    display: none;
+  }
+  section.service .rightSideService .serviceElements .serviceElement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 460px) {
+  section.service {
+    padding-top: 9rem;
+  }
+}
+@media (max-width: 460px) {
+  section.brands .brandsLogo {
+    margin-left: auto;
+  }
+  section.brands .brandsLogo .brandFirst {
+    grid-row-start: 1;
+  }
+}
+@media (max-width: 872px) {
+  section.products {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.products .allProducts {
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section.products .allProducts .leftProduct {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.products .allProducts .rightProduct {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section.products .allProducts .belowImage {
+    width: 328px;
+    height: 450px;
+  }
+  section.products .allProducts .belowImage h5.leftPosterABS {
+    top: 1rem;
+  }
+  section.products .allProducts .belowImage h5.rightPosterABS {
+    top: 15px;
+  }
+  section.products .rightProduct .seeAll {
+    margin-right: auto;
+    margin-top: 3rem !important;
+  }
+}
+@media (max-width: 768px) {
+  section.experience .experienceCatch {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+  section.experience .experienceCatch .leftWriteSide h3 {
+    -webkit-transform: inherit;
+            transform: inherit;
+  }
+  section.experience .experienceCatch .rightExpSide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  section.Allscale .allScaleCatch .scales {
+    position: relative;
+  }
+  section.Allscale .allScaleCatch .scales .catchScale {
+    position: static;
+  }
+  section.Allscale .allScaleCatch .scales .catchScale .greenicon {
+    bottom: -71px;
+    left: 85px;
+  }
+  section.Allscale .allScaleCatch .scales .catchScale .yellowicon {
+    top: -76px;
+    right: 43px;
+  }
+  section.Allscale .allScaleCatch .scales .catchScale .pinkicon {
+    right: 28px;
+    top: -3px;
+  }
+  section.Allscale .allScaleCatch .scales .microGreenIcon {
+    top: 14rem;
+  }
+}
+@media (max-width: 992px) {
+  section.reviewhome .reviewContainer .rightside .contentCatch {
+    margin-left: 3rem;
+  }
+  section.reviewhome .reviewContainer .rightside .contentReview p {
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  section.reviewhome .reviewContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.reviewhome .reviewContainer .leftside h3 {
+    -webkit-transform: inherit;
+            transform: inherit;
+  }
+  section.reviewhome .reviewContainer .dirnaq {
+    display: none;
+  }
+  section.reviewhome .reviewContainer .rightside .contentCatch {
+    margin-left: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.reviewhome .reviewContainer .rightside .contentCatch .moveleftright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.reviewhome .reviewContainer .rightside .contentCatch .moveleftright .dirnaqResponsive {
+    display: inherit;
+    width: 68px;
+  }
+  section.reviewhome .reviewContainer .rightside .contentCatch .moveleftright .dirnaqResponsive img {
+    width: 100%;
+  }
+  section.reviewhome .reviewContainer .rightside .moveleftright i:nth-child(2) {
+    margin-left: 1rem;
+  }
+  section.reviewhome .reviewContainer .rightside .reviewer {
+    margin-right: auto;
+  }
+}

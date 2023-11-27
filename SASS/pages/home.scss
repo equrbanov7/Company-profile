@@ -1,0 +1,613 @@
+@import "../helper/mixin";
+@import "../helper/map";
+@import "../helper/variables";
+@import "../components/header";
+@import "../components/blogCard";
+@import "../components/footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Euclid+Circular+A:wght@400;700&display=swap");
+
+//Header Start
+
+header.mainHeader {
+  background-image: url(/IMAGES/headerBackGround.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  margin-bottom: 0;
+}
+
+header.mainHeader .navbar {
+  margin-top: 0;
+  padding-top: 24px;
+}
+header nav .rightside .menuElements li {
+  color: #fff;
+}
+
+header.mainHeader .middleMainInfo {
+  @include flex(center, center);
+  margin-top: 192px;
+  h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 120px;
+    text-align: center;
+    color: #ffffff;
+  }
+  span {
+    color: #ff8145;
+  }
+}
+
+header.mainHeader .bottom3Dimg {
+  @include flex(center, center);
+  margin-top: 63px;
+  .vectorHeader {
+    // margin-right: 72px;
+    position: relative;
+    right: 72px;
+    margin-bottom: 255px;
+  }
+}
+//Header End
+
+//Section Service Start
+
+section.service {
+  background: #fbf5f2;
+  padding-top: 312px;
+  padding-bottom: 104px;
+
+  margin-bottom: 100px;
+  .container1 {
+    display: flex;
+    gap: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    .leftsideName {
+      h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: $buttongren;
+      }
+      h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 43px;
+        color: #212121;
+      }
+    }
+  }
+  .middleLine {
+    position: relative;
+    margin-left: 2rem;
+    margin-right: 5rem;
+    width: 1px;
+    height: 244px;
+    background: #c4c4c4;
+  }
+}
+
+section.service .rightSideService .serviceElements {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section.service .rightSideService .serviceElements .serviceElement {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  .detailService {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h3 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      color: #212121;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #212121;
+    }
+  }
+}
+
+//Section Service End
+
+//Section Brand Start
+
+section.brands {
+  @include flex(center, center);
+  flex-direction: column;
+  margin-bottom: 6rem;
+  .brandTitle {
+    margin-bottom: 72px;
+  }
+  .brandTitle h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 43px;
+    color: #212121;
+  }
+  .brandsLogo {
+    // @include flex(center, center);
+    // flex-wrap: wrap;
+    // gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2rem;
+
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 780px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 479px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+//Section Brand StEndart
+
+// Section Products Start
+
+section.products {
+  margin-bottom: 104px;
+}
+
+section.products .allProducts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  .leftProduct {
+    display: flex;
+    flex-direction: column;
+    .info {
+      margin-bottom: 35px;
+      h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: $buttongren;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 43px;
+        color: #212121;
+      }
+    }
+  }
+  .rightProduct {
+    display: flex;
+    flex-direction: column;
+    .seeAll {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      color: #3878f2;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+}
+
+section.products .allProducts .belowImage {
+  width: 420px;
+  position: relative;
+  img {
+    width: 100%;
+  }
+  h5 {
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 43px;
+    color: #ffffff;
+  }
+  h5.leftPosterABS {
+    top: 3rem;
+    left: 3rem;
+  }
+  h5.rightPosterABS {
+    top: 36px;
+    left: 43px;
+  }
+}
+
+// Section Products End
+
+// Section Experience Start
+
+section.experience {
+  background-color: #0d1118;
+  color: #ffffff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+section.experience .experienceCatch {
+  display: flex;
+
+  .leftWriteSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min-content;
+    h3 {
+      transform: rotate(-90deg);
+      width: max-content;
+    }
+  }
+}
+section.experience .experienceCatch .rightExpSide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+section.experience .experienceCatch .expCards {
+  width: 176px;
+  height: 320px;
+  border: 1px solid #343434;
+  display: flex;
+
+  .exp {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 24px;
+    }
+    p {
+      margin-top: 40px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .imgCatch {
+      margin-top: auto;
+    }
+  }
+}
+
+// Section Experience End
+
+// Section Scale Start
+
+section.Allscale {
+  background: #faf4e7;
+}
+
+section.Allscale .topTitle {
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 72px;
+  h5 {
+    font-size: map-get($fonts, fs-mobile-sm);
+    font-weight: map-get($fonts, fw-text-3);
+    color: $buttongren;
+  }
+  h2 {
+    font-weight: map-get($fonts, fw-text-3);
+    font-size: 34px;
+    line-height: 43px;
+    color: #212121;
+  }
+}
+section.Allscale .allScaleCatch {
+  padding-top: 72px;
+  padding-bottom: 140px;
+
+  .scales {
+    @include flex(center, center);
+    gap: 40px;
+    flex-wrap: wrap;
+    position: relative;
+    .catchScale {
+      position: relative;
+      img {
+        position: absolute;
+      }
+      .greenicon {
+        bottom: -4rem;
+        right: 8rem;
+      }
+      .yellowicon {
+        top: -19px;
+        right: -103px;
+        z-index: 3;
+      }
+      .pinkicon {
+        top: 57px;
+        right: -115px;
+      }
+    }
+    .scale {
+      @include flex(center, center);
+      gap: 24px;
+      width: 240px;
+      height: 320px;
+      background-color: #ffffff;
+      position: relative;
+      border-radius: 1rem;
+      z-index: 2;
+    }
+
+    .middlescale {
+      h4 {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        color: #0d1118;
+      }
+      .middleline {
+        @include flex(center, center);
+        h2 {
+          width: 56px;
+          height: 1px;
+          background-color: #e6e8ea;
+        }
+      }
+      h6 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        color: #354556;
+      }
+    }
+  }
+  .microGreenIcon {
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+  }
+}
+
+// Section Scale End
+
+// Section Review Start
+
+section.reviewhome {
+  background-color: #0d1118;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+section.reviewhome .reviewContainer {
+  display: flex;
+  justify-content: space-between;
+  .leftside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min-content;
+    h3 {
+      transform: rotate(-90deg);
+      width: max-content;
+    }
+  }
+  .dirnaq {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+    bottom: 4rem;
+  }
+  .rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    .contentCatch {
+      margin-left: 175px;
+      .dirnaqResponsive{
+        display: none;
+      }
+    }
+    .moveleftright i:nth-child(1) {
+      font-size: 24px;
+    }
+    .moveleftright i:nth-child(2) {
+      font-size: 24px;
+      margin-left: 24px;
+      color: $buttongren;
+    }
+
+    .contentReview {
+      margin-top: 40px;
+      margin-bottom: 4rem;
+
+      p {
+        width: 86%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+    .reviewer {
+      display: flex;
+      gap: 1rem;
+      .reviewerdetail {
+        color: #6e7581;
+        font-weight: map-get($fonts, fw-text-3);
+        h4 {
+          font-size: 20px;
+        }
+        h5 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+section.reviewhome .reviewContainer .contentReview {
+  p {
+    width: 488px;
+  }
+}
+
+// Section Review End
+
+/*  Section Latest Css Start*/
+
+section.latestblog {
+  @include flex(center, center);
+  flex-direction: column;
+  margin-top: 129px;
+  margin-bottom: 134px;
+
+  h1 {
+    text-align: center;
+    font-weight: map-get($fonts, fw-text-3);
+    color: #000000;
+    font-size: 34px;
+    margin-bottom: 72px;
+  }
+  .belowInfo h2{
+    color: #27565E;
+  }
+}
+
+/*  Section latest Css End*/
+
+// For Header Media Query Start
+
+// max-width 992px
+@media (max-width: 992px) {
+  header.mainHeader {
+    height: 800px;
+  }
+  header.mainHeader .middleMainInfo {
+    h1 {
+      font-size: 54px;
+    }
+  }
+  header.mainHeader .bottom3Dimg {
+    .vectorHeader {
+      right: 2rem;
+    }
+    .HomeImage {
+      width: 600px;
+    }
+  }
+}
+
+// Max width 768 px Start
+
+@media (max-width: 768px) {
+  header.mainHeader {
+    height: 600px;
+  }
+  header.mainHeader .middleMainInfo {
+    margin-top: auto;
+    h1 {
+      font-size: 42px;
+    }
+  }
+
+  header.mainHeader .bottom3Dimg {
+    display: flex;
+    flex-direction: row-reverse;
+    .vectorHeader {
+      bottom: 6rem;
+    }
+    .HomeImage {
+      width: 500px;
+    }
+  }
+}
+
+// Max width 576 px Start
+
+@media (max-width: 576px) {
+  header.mainHeader {
+    height: 450px;
+  }
+
+  header.mainHeader .middleMainInfo {
+    h1 {
+      font-size: 32px;
+      line-height: inherit;
+    }
+  }
+  header.mainHeader .bottom3Dimg {
+    position: relative;
+    .vectorHeader {
+      position: absolute;
+      top: -2rem;
+    }
+    .HomeImage {
+      width: 400px;
+    }
+  }
+}
+
+// Max width 460 px Start
+
+@media (max-width: 460px) {
+  header.mainHeader {
+    height: 360px;
+  }
+  header.mainHeader .navbar {
+    padding: 1rem;
+    .leftlogoside {
+      width: 115px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  header.mainHeader .bottom3Dimg {
+    position: relative;
+
+    .HomeImage {
+      width: 270px;
+      height: 208px;
+    }
+  }
+  header nav .rightside .menuElements {
+    display: table-header-group;
+
+    .contact {
+      width: 112px;
+      height: 48px;
+    }
+  }
+}
+
+// For Header Media Query End

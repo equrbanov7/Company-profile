@@ -1,0 +1,207 @@
+@import "../helper/mixin";
+@import "../helper/map";
+@import "../helper/variables";
+
+//Section Service Start
+
+// Max width 768 px Start
+
+@media (max-width: 768px) {
+  section.service {
+    padding-top: 94px;
+  }
+  section.service .container1 {
+    @include flex(center, center);
+    text-align: center;
+    flex-direction: column;
+    gap: 3rem;
+    .middleLine {
+      display: none;
+    }
+  }
+  section.service .rightSideService .serviceElements .serviceElement {
+    @include flex(center, center);
+
+    flex-direction: column;
+  }
+}
+
+// Max width 460 px Start
+
+@media (max-width: 460px) {
+  section.service {
+    padding-top: 9rem;
+  }
+}
+
+//Section Service Start
+
+//Section Brands Start
+
+@media (max-width: 460px) {
+  section.brands .brandsLogo {
+    margin-left: auto;
+  }
+  section.brands .brandsLogo .brandFirst {
+    grid-row-start: 1;
+  }
+}
+
+//Section Brands End
+
+// Section Products Start
+
+// Max width 872 px Start
+
+@media (max-width: 872px) {
+  section.products {
+    text-align: center;
+    display: flex;
+    .allProducts {
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      .leftProduct {
+        justify-content: center;
+        align-items: center;
+      }
+      .rightProduct {
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .belowImage {
+        width: 328px;
+        height: 450px;
+        h5.leftPosterABS {
+          top: 1rem;
+        }
+        h5.rightPosterABS {
+          top: 15px;
+        }
+      }
+    }
+  }
+  section.products .rightProduct .seeAll {
+    margin-right: auto;
+    margin-top: 3rem !important;
+  }
+}
+
+// Section Products End
+
+//Section Experiences Start
+
+// Max width 768 px Start
+
+@media (max-width: 768px) {
+  section.experience .experienceCatch {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .leftWriteSide h3 {
+      transform: inherit;
+    }
+    .rightExpSide {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+//Section Experiences End
+
+// Section Scale Start
+
+// Max width 768 px Start
+
+@media (max-width: 768px) {
+  section.Allscale .allScaleCatch .scales {
+    position: relative;
+    .catchScale {
+      position: static;
+      .greenicon {
+        bottom: -71px;
+        left: 85px;
+      }
+      .yellowicon {
+        top: -76px;
+        right: 43px;
+      }
+      .pinkicon {
+        right: 28px;
+        top: -3px;
+      }
+    }
+    .microGreenIcon {
+      top: 14rem;
+    }
+  }
+}
+
+// Section Review Start
+
+//Max width 992px Start
+
+@media (max-width: 992px) {
+  section.reviewhome .reviewContainer .rightside {
+    .contentCatch {
+      margin-left: 3rem;
+    }
+    .contentReview p {
+      width: auto;
+    }
+  }
+}
+
+//Max width 992px End
+
+// Max width 768 px Start
+
+@media (max-width: 768px) {
+  section.reviewhome .reviewContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .leftside h3 {
+      transform: inherit;
+    }
+    .dirnaq {
+      display: none;
+    }
+    .rightside {
+      .contentCatch {
+        margin-left: inherit;
+        @include flex(center, center);
+        // display: flex;
+        // justify-content: center;
+        // align-items: flex-end;
+        flex-direction: column;
+        .moveleftright {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          .dirnaqResponsive {
+            display: inherit;
+            width: 68px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .moveleftright i:nth-child(2) {
+        margin-left: 1rem;
+      }
+
+      .reviewer {
+        margin-right: auto;
+      }
+    }
+  }
+}

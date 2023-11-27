@@ -1,0 +1,174 @@
+//Footer Css Start
+// ::placeholder {
+//     color: initial !important;
+//   }
+
+footer {
+  background-color: #0d1118;
+  color: #6e7581;
+  ::placeholder {
+    color: initial !important;
+  }
+  .mobileSocialRight {
+    display: none;
+  }
+}
+
+footer .footermain {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 104px;
+
+  .menuElements ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .otherInformation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .getInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .getInfo input {
+    width: 248px;
+    height: 48px;
+    color: #c0c0c0;
+    border-radius: 16px;
+    border: none;
+    padding: 16px;
+    outline: none;
+  }
+  .getInfo button {
+    width: 96px;
+    height: 48px;
+    background: $buttongren;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    margin-left: 8px;
+  }
+  .getInfo .emailFooter a {
+    margin-left: 1rem;
+  }
+}
+
+footer .footermain .iconSide {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  color: #3d4045;
+  img {
+    width: 156px;
+    height: 48px;
+  }
+  .socialMedias {
+    display: flex;
+    gap: 24px;
+    i {
+      font-size: 24px;
+    }
+  }
+  .copyRight {
+    display: flex;
+    gap: 10px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    h6 {
+      transform: translate(10px, 3px);
+    }
+  }
+}
+
+//Footer Css End
+
+// Media Query Start
+
+// Max Width 992px
+
+@media (max-width: 992px) {
+  footer .footermain {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "head head"
+      "nav main"
+      "nav foot";
+    justify-content: center;
+
+    .iconSide {
+      grid-area: head;
+      justify-content: center;
+      align-items: center;
+    }
+    .getInfo {
+      transform: translate(33%, 3%);
+    }
+  }
+}
+
+// Max Width 552px
+
+@media (max-width: 552px) {
+  footer {
+    .mobileSocialRight {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 24px;
+      .socialMediasMobile {
+        display: flex;
+        gap: 24px;
+        i {
+          font-size: 25px;
+        }
+      }
+      .middleLineFooter {
+        width: 100%;
+        background-color: #343434;
+        height: 1px;
+      }
+      .copyRight {
+        display: flex;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+        h6{
+          transform: translate(10px, 3px);
+        }
+      }
+    }
+  }
+
+  footer .footermain {
+    .iconSide {
+      .copyRight {
+        display: none;
+      }
+      .socialMedias {
+        display: none;
+      }
+    }
+  }
+  footer .getInfo{
+    width: 100%;
+    .inputButton {
+      input{
+        width: auto;
+      }
+     button{
+      margin-top: 1rem;
+     }
+    }
+  }
+}
